@@ -1,0 +1,228 @@
+/* ---ТИПОГРАФИЯ--- */
+/* вторичный цвет текста, заголовки color: #212121;  --secondary-text-color: #212121;*/
+/* цвет контактов футере color:  --secondary-contacts-color: rgba(255, 255, 255, 0.6); */
+/* основной цвет текста (параграфы) color:#757575  --primary-text-color--*/ 
+/* цвет  текста при ховер color: --accent-color-text: #2196F3; */
+
+/* ---ЦВЕТОГРАФИЯ--- */
+/* цет секции герой и футер background:  --background-secondery-color: #2F303A; */
+/* основной цвет на странице студии и портфолио background:  --primari-bacground-color: #ffffff; */
+/* цвет секции с работниками background: ---bacground-staff-color: #F5F4FA; */
+/* цвет кнопки при hover: --bacground-hover-button:#188ce8; */
+:root{
+--primary-text-color: #757575;
+--primari-bacground-color: #ffffff; 
+--background-secondery-color: #2F303A;
+--bacground-staff-color: #F5F4FA;
+--accent-color-text: #2196F3;
+--secondary-text-color: #212121;
+--secondary-contacts-color: rgba(255, 255, 255, 0.6);
+--bacground-hover-button:#188ce8;
+}
+body{
+
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+  background-color: var(--primari-bacground-color);
+  color: var(--primary-text-color);
+
+}
+
+a{
+    font-style: normal;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/* ----HEADER---- */
+/* логотип */
+
+.first-name, 
+.second-name,
+.second-white-name{
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+}
+ 
+
+.first-name {
+color:#2196F3 ;
+margin-right: -4px;
+}
+.second-name{
+color: var(--secondary-text-color);
+}
+.second-white-name{
+color: var(--primari-bacground-color);
+}
+/* ссылки на страницы */
+.link{
+color: var(--secondary-text-color);
+}
+.site-nav,
+.link:hover,
+.site-nav,
+.link:focus{
+    color: var(--accent-color-text);
+}
+
+.site-nav .link.current{
+    color: var(--accent-color-text);
+}
+.site-nav,
+.contacts{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.02em
+}
+
+/* ссылки на контакты */
+.contacts-link,
+.contacts-link-fut,
+.map-link{
+    line-height: 1.7;
+    list-style: none;
+}
+.contacts-link{
+    color: var(--primary-text-color);
+}
+
+.contacts-link-fut{
+color: var(--secondary-contacts-color);
+}
+
+.contacts-link:hover{
+    color: var(--accent-color-text);
+}
+.contacts-link:focus{
+    color: var(--accent-color-text);
+}
+.contacts-link-fut:hover,
+.contacts-link-fut:focus{
+    color: var(--accent-color-text);
+}
+
+.map-link{
+color: var(--primari-bacground-color);
+}
+.map-link:hover,
+.map-link:focus{
+    color: var(--accent-color-text);
+}
+/* ----HERO---- */
+.hero{
+background-color: var(--background-secondery-color);
+}
+.hero-title{
+font-weight: 900;
+font-size: 44px;
+line-height: 1.4;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+color: var(--primari-bacground-color);
+}
+.hero-button{
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.06em;
+background-color: var(--accent-color-text);
+color: var(--primari-bacground-color);
+cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus{
+    background-color: var(--bacground-hover-button);
+}
+
+/*  ---MAIN--- */
+
+.features-title{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: var(--secondary-text-color);
+}
+
+.features,
+.specialization,
+.staff{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+/* ---STAFF--- */
+.staff-name{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+.staff-position{
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.staff-list{
+    background-color: var(---bacground-staff-color);
+}
+/* ---FOOTER--- */
+.bottom-of-page{
+    background-color: var(--background-secondery-color);
+}
+/* ---PORTFOLIO--- */
+.filter-items{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+cursor: pointer;
+letter-spacing: 00.03em;
+text-align: center;
+color: var(--secondary-text-color);
+background-color: var(--bacground-staff-color);
+}
+
+.filter-items:hover,
+.filter-items:focus{
+color: var(--primari-bacground-color);
+background-color: var(--accent-color-text);
+}
+.filter-name{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+
+color: var(--secondary-text-color);
+}
+.filter-text{
+font-size: 16px;
+line-height: 1.8;
+letter-spacing: 0.03em;
+
+color: var(--primary-text-color);
+}
