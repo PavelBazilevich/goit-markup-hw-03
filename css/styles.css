@@ -9,10 +9,11 @@
 /* основной цвет на странице студии и портфолио background:  --primari-bacground-color: #ffffff; */
 /* цвет секции с работниками background: ---bacground-staff-color: #F5F4FA; */
 /* цвет кнопки при hover: --bacground-hover-button:#188ce8; */
-/* цвет рамки хедера --borter-color: #ececec; */
+/* цвет рамки хедера --bordter-color: #ececec; */
 
 /* ---ГЕОМЕТРИЯ--- */
 /* отступы между карточками портфолио: --card-gap: 20px; */
+/* рамка карточек в портфолио : --border-portfolio: 1px solid rgba(238, 238, 238, 1); */
 :root {
   --primary-text-color: #757575;
   --primari-bacground-color: #ffffff;
@@ -22,8 +23,9 @@
   --secondary-text-color: #212121;
   --secondary-contacts-color: rgba(255, 255, 255, 0.6);
   --bacground-hover-button: #188ce8;
-  --borter-color: #ececec;
-  --card-gap: 20px;
+  --border-color: #ececec;
+  --card-gap: 30px;
+  --border-portfolio: 1px solid rgba(238, 238, 238, 1);
 }
 
 body {
@@ -157,7 +159,7 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--borter-color);
+  border-bottom: 1px solid var(--border-color);
 }
 .site-nav {
   display: flex;
@@ -430,9 +432,12 @@ img {
   flex-basis: calc(100% / 3 - var(--card-gap));
   margin-top: var(--card-gap);
   margin-left: var(--card-gap);
-  border: 1px solid rgba(238, 238, 238, 1);
 }
 
 .card-descripcion {
   padding: 20px 24px;
+  border-right: var(--border-portfolio);
+  border-bottom: var(--border-portfolio);
+  border-left: var(--border-portfolio);
 }
+
