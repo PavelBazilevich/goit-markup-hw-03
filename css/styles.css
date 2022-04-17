@@ -159,7 +159,15 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
+}
+.header-page {
   border-bottom: 1px solid var(--border-color);
+  /* фиксация хедера при прокрутке */
+  /* position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: white; */
 }
 .site-nav {
   display: flex;
@@ -201,11 +209,10 @@ img {
 .hero {
   text-align: center;
   background-color: var(--background-secondery-color);
-}
-.hero-page {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .hero-title {
   margin-bottom: 30px;
 
@@ -239,7 +246,7 @@ img {
 }
 
 /*  CONTEINER-FEATURES */
-.features-list {
+.features-page {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -283,7 +290,8 @@ img {
 .specialization {
   margin-bottom: 50px;
 }
-.specialization-list {
+
+.specialization-page {
   padding-bottom: 94px;
 }
 
@@ -306,7 +314,7 @@ img {
   color: #212121;
 }
 /* ---STAFF--- */
-.staff-page {
+.staff-list {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -364,24 +372,30 @@ img {
   margin-bottom: 20px;
 }
 
+.footer-link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .bottom-of-page {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-secondery-color);
 }
 /* ---PORTFOLIO--- */
-.button-box {
+.filter-page {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .filter-list {
   display: flex;
   justify-content: center;
 }
 .version + .version {
-  margin-left: 30px;
+  margin-left: 8px;
 }
 
 .filter-items {
+  padding: 6px 22px;
   border-radius: 4px;
 
   font-family: "Roboto";
@@ -418,9 +432,8 @@ img {
 
   color: var(--primary-text-color);
 }
-.cards {
-  padding-top: 50px;
-  padding-bottom: 94px;
+.filter-list {
+  margin-bottom: 50px;
 }
 .filter-card {
   display: flex;
@@ -440,4 +453,3 @@ img {
   border-bottom: var(--border-portfolio);
   border-left: var(--border-portfolio);
 }
-
